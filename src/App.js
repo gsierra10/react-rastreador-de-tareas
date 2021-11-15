@@ -59,7 +59,7 @@ const toggleReminder = (id) => {
     <div className="container">
       <Header />
       <AddTask onAdd={addTask}/>
-      {tasks.lenght > 0 ? (<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} /> ) : ('No hay tareas para mostrar')}
+      {<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />}
     </div>
   );
 }
